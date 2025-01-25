@@ -1,13 +1,13 @@
-﻿/*
-var invoice = new Invoice
-{
-	InvoiceNo = 1,
-	IssuedDate = new DateOnly(2021, 1, 1),
-	Customer = "Acme Inc.",
-	Amount = 1000,
-	Description = "Initial payment"
-};
+﻿using LiskovSubstitution.Models;
 
-var invoiceRepository = new InvoiceRepository();
-invoiceRepository.Save(invoice);
-*/
+ static void TestDrive(Vehicle vehicle)
+{
+	vehicle.Drive();
+}
+
+var car = new Car();
+TestDrive(car);
+
+var truck = new Truck();
+TestDrive(truck);
+
