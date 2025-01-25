@@ -1,9 +1,12 @@
 ﻿using System;
-
-public class InvoiceRepository
+namespace SOLID.SingleResponsibility
 {
-	public void Save(Invoice invoice)
+	public class InvoiceRepository
 	{
-		Console.WriteLine($"Saved the invoice #{invoice.InvoiceNo}");
+		public void Save(Invoice invoice)
+		{
+			Console.WriteLine($"Saved the invoice #{invoice.InvoiceNo}");
+		}
 	}
+
 }
